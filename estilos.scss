@@ -71,13 +71,11 @@ body {
             width: 325px;
             height: 40px;
             cursor: pointer;
-
         }
         input[type=button]:hover {
             background-color: #137ea8;
             border: #137ea8;
             cursor: pointer;
-
         }
         .olvido {
             font-size: 12px;
@@ -111,6 +109,10 @@ body {
             margin-top: 35%;
         }
     }
+
+    a{
+        text-decoration: none;
+    }
 }
 
 .flex-aloslados-padre {
@@ -128,15 +130,75 @@ body {
     align-self: auto;
 }
 
-.otro{
+.otro {
     justify-content: start;
 }
-//---------------------------------------------------->
 
-.mensaje{
+//---------------------------------------------------->
+.mensaje {
     font-weight: 400;
     margin: 0 13%;
     margin-top: 5%;
     text-align: center;
     color: $negro;
+}
+
+.pregunta {
+    font-weight: 500;
+    margin: 0 13%;
+    margin-top: 5%;
+    text-align: center;
+    color: $negro;
+}
+
+.respuesta {
+    justify-content: space-around;
+    width: 300px;
+
+   
+
+    input[type=radio] {
+        display: none;
+    }
+    input[type="radio"]+label:before {
+        content: "\f10c";
+        color: $azul;
+    }
+    input[type="radio"]:checked+label:before {
+        content: "\f111";
+        color: $azul;
+
+    }
+    label:before {
+        font-family: 'FontAwesome';
+        width: 1.25em;
+        display: inline-block;
+    }
+}
+
+.respuesta:nth-child(2) {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.progreso{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 12%;
+}
+
+.regresar{
+    font-size: 12px;
+    font-weight: 300;
+    color: $gris;
+    letter-spacing: 1.5px;
+    padding-top: 6px;
+    transition: all 0.1s;
+    padding-left: 27%;
+}
+
+.regresar:hover {
+    font-weight: 400;
+    color: $negro;
+    cursor: pointer;
 }
