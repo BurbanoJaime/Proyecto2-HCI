@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-  transition: all .2s;
+  transition: all .1s;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 .pantalla {
   background-color: #eaeaea;
   margin-left: 35%;
-  width: 553px;
+  width: 603px;
   height: 973px;
 }
 
@@ -30,15 +30,24 @@ body {
 }
 
 .pantalla form {
-  margin: 0 20%;
+  margin-left: 20%;
   margin-top: 10%;
 }
 
-.pantalla form input {
+.pantalla form input[type=text] {
   width: 300px;
   height: 40px;
   border: 2px solid #7f7f7f;
   padding: 0 8px;
+  transition: all .2s;
+}
+
+.pantalla form input[type=password] {
+  width: 300px;
+  height: 40px;
+  border: 2px solid #7f7f7f;
+  padding: 0 8px;
+  transition: all .2s;
 }
 
 .pantalla form input:focus {
@@ -64,10 +73,62 @@ body {
   border: 2px solid #1698d5;
   border-radius: 15px;
   transition: all 0.1s;
+  width: 325px;
+  height: 40px;
 }
 
 .pantalla form input[type=submit]:hover {
   background-color: #137ea8;
   border: #137ea8;
+}
+
+.pantalla form .olvido {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7f7f7f;
+  letter-spacing: 1.5px;
+  padding-top: 6px;
+  transition: all 0.1s;
+}
+
+.pantalla form .olvido:hover {
+  font-weight: 400;
+  color: #303030;
+  cursor: pointer;
+}
+
+.pantalla form .fa-eye {
+  color: #1698d5;
+}
+
+.pantalla form .ojo {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+}
+
+.pantalla .logos div {
+  margin-left: 20px;
+  margin-top: 35%;
+}
+
+.flex-aloslados-padre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.flex-aloslados-hijo {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.otro {
+  justify-content: start;
 }
 /*# sourceMappingURL=estilos.css.map */

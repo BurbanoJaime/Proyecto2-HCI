@@ -6,7 +6,7 @@
     <title>TEMPUS</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="Icono.ico" type="image/x-icon">
-  
+
 
 </head>
 
@@ -19,20 +19,36 @@
         <form onsubmit="return false;">
             <input type="text" name="user" id="user" placeholder="USUARIO" />
             <br/>
-            <input type="password" name="password" id="password" placeholder="CONTRASEÑA"/>
+            <div class="flex-aloslados-padre otro">
+
+            <input type="password" name="password" id="password" placeholder="CONTRASEÑA" class "ojo flex-aloslados-hijo/>
             <br/>
-            <input type="checkbox" id="show" />
-            <label for="show"><i class="fas fa-eye"></i></label>
+            <input type="checkbox" id="show" class="flex-aloslados-hijo" />
+            <label for="show"">
+                <i class="fas fa-eye"></i>
+            </label>
+        </div>
             <br/>
             <input type="submit" value="INICIAR SESIÓN" />
+            <p class="olvido">¿Olvidó su nombre de Usuario o Contraseña?</p>
         </form>
+
+        <div class="logos flex-aloslados-padre">
+            <div class="flex-aloslados-hijo">
+                <img src="Imagenes/bienestar.png">
+            </div>
+            <div class="flex-aloslados-padre">
+                <img src="Imagenes/icesi.png">
+            </div>
+        </div>
 
 
     </section>
 
-    
+
     <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 

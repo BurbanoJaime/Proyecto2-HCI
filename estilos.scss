@@ -9,7 +9,7 @@ $gris:#7f7f7f;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    transition: all .2s;
+    transition: all .1s;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 .pantalla {
     background-color: $fondo;
     margin-left: 35%;
-    width: 540px + 13px;
+    width: 540px + 13px +50px;
     height: 960px + 13px;
     .logo {
         width: 300px;
@@ -32,13 +32,21 @@ body {
         }
     }
     form {
-        margin: 0 20%;
+        margin-left: 20%;
         margin-top: 10%;
-        input {
+        input[type=text] {
             width: 300px;
             height: 40px;
             border: 2px solid $gris;
             padding: 0 8px;
+            transition: all .2s;
+        }
+        input[type=password] {
+            width: 300px;
+            height: 40px;
+            border: 2px solid $gris;
+            padding: 0 8px;
+            transition: all .2s;
         }
         input:focus {
             border: 2px solid $azul;
@@ -60,10 +68,59 @@ body {
             border: 2px solid $azul;
             border-radius: 15px;
             transition: all 0.1s;
+            width: 325px;
+            height: 40px;
         }
         input[type=submit]:hover {
             background-color: #137ea8;
             border: #137ea8;
         }
+        .olvido {
+            font-size: 12px;
+            font-weight: 300;
+            color: $gris;
+            letter-spacing: 1.5px;
+            padding-top: 6px;
+            transition: all 0.1s;
+        }
+        .olvido:hover {
+            font-weight: 400;
+            color: $negro;
+            cursor: pointer;
+        }
+        .fa-eye {
+            color: $azul;
+        }
+        .ojo {
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 0;
+        }
     }
+    .logos {
+        div {
+            margin-left: 20px;
+            margin-top: 35%;
+        }
+    }
+}
+
+.flex-aloslados-padre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+.flex-aloslados-hijo {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.otro{
+    justify-content: start;
 }
