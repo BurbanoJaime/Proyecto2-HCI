@@ -1,0 +1,69 @@
+//Fuente
+@import url('https://fonts.googleapis.com/css?family=Raleway:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+//Colores
+$fondo: #eaeaea;
+$azul: #1698d5;
+$negro:#303030;
+$gris:#7f7f7f;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    transition: all .2s;
+}
+
+body {
+    background-color: #606060;
+}
+
+.pantalla {
+    background-color: $fondo;
+    margin-left: 35%;
+    width: 540px + 13px;
+    height: 960px + 13px;
+    .logo {
+        width: 300px;
+        height: 127px;
+        margin: 0 20%;
+        padding-top: 50%;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    form {
+        margin: 0 20%;
+        margin-top: 10%;
+        input {
+            width: 300px;
+            height: 40px;
+            border: 2px solid $gris;
+            padding: 0 8px;
+        }
+        input:focus {
+            border: 2px solid $azul;
+        }
+        input::placeholder {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 17px;
+        }
+        #password {
+            margin-top: 5%;
+        }
+        input[type=submit] {
+            background-color: $azul;
+            color: $fondo;
+            font-weight: 500;
+            font-style: italic;
+            font-size: 25px;
+            border: 2px solid $azul;
+            border-radius: 15px;
+            transition: all 0.1s;
+        }
+        input[type=submit]:hover {
+            background-color: #137ea8;
+            border: #137ea8;
+        }
+    }
+}

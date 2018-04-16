@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=estilos.css.map */
+@import url("https://fonts.googleapis.com/css?family=Raleway:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  transition: all .2s;
+}
+
+body {
+  background-color: #606060;
+}
+
+.pantalla {
+  background-color: #eaeaea;
+  margin-left: 35%;
+  width: 553px;
+  height: 973px;
+}
+
+.pantalla .logo {
+  width: 300px;
+  height: 127px;
+  margin: 0 20%;
+  padding-top: 50%;
+}
+
+.pantalla .logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.pantalla form {
+  margin: 0 20%;
+  margin-top: 10%;
+}
+
+.pantalla form input {
+  width: 300px;
+  height: 40px;
+  border: 2px solid #7f7f7f;
+  padding: 0 8px;
+}
+
+.pantalla form input:focus {
+  border: 2px solid #1698d5;
+}
+
+.pantalla form input::placeholder {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 17px;
+}
+
+.pantalla form #password {
+  margin-top: 5%;
+}
+
+.pantalla form input[type=submit] {
+  background-color: #1698d5;
+  color: #eaeaea;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 25px;
+  border: 2px solid #1698d5;
+  border-radius: 15px;
+  transition: all 0.1s;
+}
+
+.pantalla form input[type=submit]:hover {
+  background-color: #137ea8;
+  border: #137ea8;
+}
+/*# sourceMappingURL=estilos.css.map */
