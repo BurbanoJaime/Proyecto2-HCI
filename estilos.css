@@ -12,7 +12,7 @@ body {
 
 .pantalla {
   background-color: #eaeaea;
-  margin-left: 35%;
+  margin: 0 35%;
   width: 603px;
   height: 973px;
 }
@@ -64,7 +64,7 @@ body {
   margin-top: 5%;
 }
 
-.pantalla form input[type=submit] {
+.pantalla form input[type=button] {
   background-color: #1698d5;
   color: #eaeaea;
   font-weight: 500;
@@ -75,11 +75,13 @@ body {
   transition: all 0.1s;
   width: 325px;
   height: 40px;
+  cursor: pointer;
 }
 
-.pantalla form input[type=submit]:hover {
+.pantalla form input[type=button]:hover {
   background-color: #137ea8;
   border: #137ea8;
+  cursor: pointer;
 }
 
 .pantalla form .olvido {
@@ -108,6 +110,12 @@ body {
   margin: 0;
 }
 
+.pantalla .logos {
+  position: absolute;
+  top: 800px;
+  left: 850px;
+}
+
 .pantalla .logos div {
   margin-left: 20px;
   margin-top: 35%;
@@ -130,5 +138,13 @@ body {
 
 .otro {
   justify-content: start;
+}
+
+.mensaje {
+  font-weight: 400;
+  margin: 0 13%;
+  margin-top: 5%;
+  text-align: center;
+  color: #303030;
 }
 /*# sourceMappingURL=estilos.css.map */

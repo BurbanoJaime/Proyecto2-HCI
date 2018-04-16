@@ -18,7 +18,7 @@ body {
 
 .pantalla {
     background-color: $fondo;
-    margin-left: 35%;
+    margin: 0 35%;
     width: 540px + 13px +50px;
     height: 960px + 13px;
     .logo {
@@ -59,7 +59,7 @@ body {
         #password {
             margin-top: 5%;
         }
-        input[type=submit] {
+        input[type=button] {
             background-color: $azul;
             color: $fondo;
             font-weight: 500;
@@ -70,10 +70,14 @@ body {
             transition: all 0.1s;
             width: 325px;
             height: 40px;
+            cursor: pointer;
+
         }
-        input[type=submit]:hover {
+        input[type=button]:hover {
             background-color: #137ea8;
             border: #137ea8;
+            cursor: pointer;
+
         }
         .olvido {
             font-size: 12px;
@@ -99,6 +103,9 @@ body {
         }
     }
     .logos {
+        position: absolute;
+        top: 800px;
+        left: 850px;
         div {
             margin-left: 20px;
             margin-top: 35%;
@@ -123,4 +130,13 @@ body {
 
 .otro{
     justify-content: start;
+}
+//---------------------------------------------------->
+
+.mensaje{
+    font-weight: 400;
+    margin: 0 13%;
+    margin-top: 5%;
+    text-align: center;
+    color: $negro;
 }
